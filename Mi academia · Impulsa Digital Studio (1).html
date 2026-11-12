@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mi academia · Impulsa Digital Studio</title>
+<style>
+:root{--bg:#F6F8FA;--card:#fff;--ink:#11233B;--mut:#647380;--navy:#11233B;--gold:#EBA63A;--teal:#14918B;--line:#DCE6EC;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1727;--card:#14263D;--ink:#EAF0F5;--mut:#9FB0BF;--line:#26405A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1727;--card:#14263D;--ink:#EAF0F5;--mut:#9FB0BF;--line:#26405A;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:60px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+h1,h2,h3{margin:0 0 8px;line-height:1.2}h2{font-size:24px}h3{font-size:18px}
+section{padding:22px 0}
+nav{position:sticky;top:0;z-index:5;background:var(--navy);padding-top:env(safe-area-inset-top,0px)}
+nav .w{display:flex;gap:4px;overflow-x:auto;padding:0 12px}
+nav a{color:#C9D5DF;text-decoration:none;font-size:14px;font-weight:600;padding:13px 11px;white-space:nowrap}
+nav a:hover{color:var(--gold)}
+.top{background:linear-gradient(135deg,#0B1A2D,#11233B 55%,#16475A);color:#fff;padding:34px 0 38px}
+.brand{color:var(--gold);font-weight:700;letter-spacing:.12em;font-size:12px}
+h1{font-size:clamp(28px,5vw,42px);margin-top:8px}
+.nm{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+.nm input{flex:1;min-width:180px;max-width:320px;padding:10px 14px;border-radius:10px;border:0;font:inherit;background:#fff;color:#11233B}
+.bar{height:12px;background:rgba(255,255,255,.2);border-radius:99px;overflow:hidden;max-width:520px;margin-top:18px}
+.bar i{display:block;height:100%;width:0;background:var(--gold);transition:width .3s}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.tag{display:inline-block;background:var(--gold);color:#11233B;border-radius:6px;padding:2px 9px;font-size:12px;font-weight:700}
+.tag.t{background:var(--teal);color:#fff}.mut{color:var(--mut);font-size:14px}
+.btn{display:inline-block;background:var(--teal);color:#fff;font:700 14px system-ui,Arial,sans-serif;border:0;border-radius:10px;padding:10px 16px;text-decoration:none;cursor:pointer;margin-top:8px}
+.btn.o{background:transparent;color:var(--teal);border:2px solid var(--teal)}
+.ses{display:flex;gap:12px;align-items:center;padding:10px 0;border-top:1px solid var(--line)}.ses:first-of-type{border-top:0}
+.d{background:var(--navy);color:#fff;border-radius:10px;padding:6px 12px;text-align:center;font-weight:700;line-height:1.1;min-width:52px}.d small{display:block;color:var(--gold);font-size:11px}
+.ck{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid var(--line);cursor:pointer}.ck:first-of-type{border-top:0}
+.ck input{width:20px;height:20px;accent-color:var(--teal);margin-top:2px}
+.idea{font-size:18px;min-height:56px}
+.cert{display:none;border:2px solid var(--gold);text-align:center}.cert.on{display:block}
+footer{background:var(--navy);color:#C9D5DF;padding:26px 0;text-align:center;font-size:14px;margin-top:20px}
+footer a{color:var(--gold)}
+</style></head><body>
+<header class="top"><div class="w">
+<div class="brand">IMPULSA DIGITAL STUDIO · MI ACADEMIA</div>
+<h1 id="hola">Hola 👋</h1>
+<p style="margin:6px 0 0;color:#D5DFE8">Tus cursos en vivo, material, grabaciones, comunidad, ideas con IA, empleos y tu certificado, en un solo lugar.</p>
+<div class="nm"><input id="nom" placeholder="Tu nombre" aria-label="Tu nombre"><button class="btn" id="gu" style="margin:0">Guardar</button></div>
+<div class="bar"><i id="pb"></i></div><p id="pt" style="margin:6px 0 0;font-size:14px;color:#D5DFE8"></p>
+</div></header>
+<nav><div class="w"><a href="#vivo">En vivo</a><a href="#material">Material</a><a href="#grab">Grabaciones</a><a href="#ideas">Ideas IA</a><a href="#empleos">Empleos IA</a><a href="#camino">Mi camino</a><a href="#cert">Certificado</a></div></nav>
+
+<main class="w">
+<section id="vivo"><h2>Tus cursos en vivo</h2><div class="card">
+<div class="ses"><div class="d"><small>NOV</small>12</div><div><b>Sesión 1 · Mi embudo y mi kit de ventas</b><div class="mut">20:30 hs · Armamos tu kit en vivo para tu nicho</div></div></div>
+<div class="ses"><div class="d"><small>NOV</small>25</div><div><b>Sesión 2 · Resultados, ajustes y novedades de IA</b><div class="mut">20:30 hs · Compartimos experiencias y armamos la segunda versión</div></div></div>
+<p id="prox" class="mut" style="margin:10px 0 0"></p>
+<a class="btn" href="#" onclick="return false">Enlace a la sala: [completar]</a></div></section>
+
+<section id="material"><h2>Material y recursos</h2><div class="grid">
+<div class="card"><span class="tag">KIT</span><h3>Kit de ventas con IA</h3><p class="mut">Generador de prompts para tu nicho, embudo y ejemplo completo.</p><a class="btn" href="https://claude.ai/artifact/7Z4onMNwYuUmMYYKhVT3r4" target="_blank" rel="noopener">Abrir el kit</a></div>
+<div class="card"><span class="tag">PDF</span><h3>Del dolor a la venta</h3><p class="mut">Ficha de negocio, mapa del cliente y prompts.</p><a class="btn" href="#" onclick="return false">Enlace: [completar]</a></div>
+<div class="card"><span class="tag">PLANTILLA</span><h3>Calendario de 10 días</h3><p class="mut">Día, acción, etapa del embudo y canal.</p><a class="btn" href="#" onclick="return false">Enlace: [completar]</a></div></div></section>
+
+<section id="grab"><h2>Grabaciones y comunidad</h2><div class="grid">
+<div class="card"><span class="tag t">GRABACIONES</span><h3>Volvé a ver los encuentros</h3><p class="mut">Se publican acá después de cada sesión.</p><a class="btn" href="#" onclick="return false">Sesión 1: [completar]</a> <a class="btn" href="#" onclick="return false">Sesión 2: [completar]</a></div>
+<div class="card"><span class="tag t">COMUNIDAD</span><h3>Grupo de comerciantes</h3><p class="mut">Compartí resultados, dudas y acciones que te funcionaron.</p><a class="btn" href="#" onclick="return false">Grupo de WhatsApp: [completar]</a></div></div></section>
+
+<section id="ideas"><h2>Ideas para usar IA en tu negocio</h2><div class="card"><div id="idea" class="idea"></div><button class="btn" id="otra">Otra idea</button></div></section>
+
+<section id="empleos"><h2>Empleos de IA de todo el mundo</h2><p class="mut" style="margin:0 0 12px">Buscadores donde encontrar trabajo remoto y oportunidades en inteligencia artificial.</p><div class="grid">
+<div class="card"><span class="tag t">REMOTO</span><h3>Remote OK</h3><p class="mut">Ofertas remotas de IA y machine learning.</p><a class="btn o" href="https://remoteok.com/remote-ai-jobs" target="_blank" rel="noopener">Ver empleos</a></div>
+<div class="card"><span class="tag t">GLOBAL</span><h3>LinkedIn</h3><p class="mut">Búsqueda de empleos con “inteligencia artificial”.</p><a class="btn o" href="https://www.linkedin.com/jobs/search/?keywords=inteligencia%20artificial" target="_blank" rel="noopener">Ver empleos</a></div>
+<div class="card"><span class="tag t">REMOTO</span><h3>We Work Remotely</h3><p class="mut">Puestos remotos en distintas áreas.</p><a class="btn o" href="https://weworkremotely.com" target="_blank" rel="noopener">Ver empleos</a></div></div></section>
+
+<section id="camino"><h2>Mi camino en el taller</h2><div class="card" id="lista"></div></section>
+<section><div class="card cert" id="cert"><span class="tag">¡LO LOGRASTE!</span><h2 style="margin-top:10px">Constancia de participación</h2><p>Comercio Inteligente · Impulsa Digital Studio</p><p style="font-size:22px"><b id="cn"></b></p><p class="mut">Completaste el recorrido del taller. Se habilita al llegar al 75 % de avance.</p></div></section>
+
+<section><div class="card"><h3>¿Necesitás ayuda?</h3><p class="mut" style="margin:0">Escribinos por WhatsApp: [completar] o por mail: [completar].</p></div></section>
+</main>
+<footer><div class="w"><b>IMPULSA DIGITAL STUDIO</b><br>Aprendé · Crecé · Transformá</div></footer>
+<script>
+var T=["Completé la ficha de mi negocio y mi cliente","Generé mi kit de ventas en vivo","Publiqué un anuncio o contenido con ayuda de IA","Probé al menos 3 días de mi calendario","Respondí consultas con mensajes preparados","Traje mis resultados a la sesión 2","Armé la segunda versión del calendario","Definí mi próxima acción"];
+var I=["Pedile a la IA 10 ideas de reels con tu producto estrella.","Armá respuestas modelo para las 10 consultas más frecuentes de WhatsApp.","Generá una descripción clara de cada producto para tu catálogo.","Escribí un mensaje de agradecimiento para quienes compraron esta semana.","Pedile una promoción para una fecha especial sin regalar margen.","Creá un recordatorio amable para clientes que no vuelven hace un mes.","Pedile preguntas para entrevistar a tus mejores clientes.","Armá un guion de 30 segundos para presentar tu negocio en video."];
+var S={n:"",c:[]};
+try{var r=localStorage.getItem("impulsa_academia");if(r)S=JSON.parse(r)}catch(e){}
+function save(){try{localStorage.setItem("impulsa_academia",JSON.stringify(S))}catch(e){}}
+var nom=document.getElementById("nom");nom.value=S.n||"";
+function name(){S.n=nom.value.trim();save();paint()}
+nom.oninput=function(){S.n=nom.value;paint()};
+document.getElementById("gu").onclick=name;
+var L=document.getElementById("lista");
+T.forEach(function(t,i){var l=document.createElement("label");l.className="ck";var c=document.createElement("input");c.type="checkbox";var s=document.createElement("span");s.textContent=t;l.appendChild(c);l.appendChild(s);c.checked=S.c.indexOf(i)>-1;c.onchange=function(){var k=S.c.indexOf(i);if(c.checked&&k<0)S.c.push(i);if(!c.checked&&k>-1)S.c.splice(k,1);save();paint()};L.appendChild(l)});
+function paint(){var p=Math.round(S.c.length/T.length*100);document.getElementById("pb").style.width=p+"%";document.getElementById("pt").textContent="Tu avance: "+S.c.length+" de "+T.length+" pasos";document.getElementById("hola").textContent="Hola"+(S.n?", "+S.n:"")+" 👋";document.getElementById("cert").className="card cert"+(p>=75?" on":"");document.getElementById("cn").textContent=S.n||"Participante"}
+var ix=0;function idea(){document.getElementById("idea").textContent=I[ix%I.length];ix++}
+document.getElementById("otra").onclick=idea;idea();
+var now=new Date(),y=now.getFullYear(),a=new Date(y,10,12,20,30),b=new Date(y,10,25,20,30);
+document.getElementById("prox").textContent=now<a?"Próximo encuentro: sesión 1, el 12 de noviembre.":now<b?"Próximo encuentro: sesión 2, el 25 de noviembre.":"Los dos encuentros ya se realizaron: revisá las grabaciones y tu camino.";
+paint();
+</script></body></html>
