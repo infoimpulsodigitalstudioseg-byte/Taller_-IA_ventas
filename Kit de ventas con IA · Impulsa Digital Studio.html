@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kit de ventas con IA · Impulsa Digital Studio</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F6F8FA;--card:#fff;--ink:#11233B;--mut:#647380;--navy:#11233B;--gold:#EBA63A;--teal:#14918B;--coral:#DC704E;--line:#DCE6EC;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0B1727;--card:#14263D;--ink:#EAF0F5;--mut:#9FB0BF;--line:#26405A;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0B1727;--card:#14263D;--ink:#EAF0F5;--mut:#9FB0BF;--line:#26405A;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 Inter,Arial,sans-serif}
+.w{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:'Playfair Display',Georgia,serif;line-height:1.15;margin:0 0 12px}
+h2{font-size:clamp(26px,4vw,38px)}section{padding:48px 0}
+.hero{background:linear-gradient(135deg,#0B1A2D,#11233B 55%,#16475A);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#EBA63A,rgba(20,145,139,.5) 60%,transparent 70%);opacity:.8}
+.hero .w{position:relative;z-index:1}
+.brand{color:var(--gold);font-weight:700;letter-spacing:.12em;font-size:13px}
+h1{font-size:clamp(34px,6vw,60px)}.sub{font-size:19px;max-width:620px;color:#D5DFE8}
+.btn{display:inline-block;background:var(--gold);color:#11233B;font-weight:700;border:0;border-radius:10px;padding:13px 22px;text-decoration:none;cursor:pointer;font:700 15px Inter,Arial,sans-serif}
+.btn.s{padding:8px 14px;font-size:13px;background:var(--teal);color:#fff}
+.funnel{display:flex;flex-direction:column;align-items:center;gap:8px}
+.st{border-radius:12px;padding:14px 18px;color:#11233B;display:flex;gap:12px;justify-content:space-between;flex-wrap:wrap}
+.st b{font-size:17px}.st span{font-size:14px}
+.steps,.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}
+.num{color:var(--teal);font-weight:700;font-size:13px;letter-spacing:.08em}
+.card h3{margin:4px 0 8px;font-size:19px}
+.form{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+label{font-size:13px;font-weight:700;color:var(--mut);display:block}
+input{width:100%;margin-top:4px;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--card);color:var(--ink);font:15px Inter,Arial,sans-serif}
+.chips{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--teal);color:var(--teal);background:transparent;border-radius:99px;padding:7px 14px;cursor:pointer;font:600 14px Inter,Arial,sans-serif}
+pre{white-space:pre-wrap;word-wrap:break-word;background:var(--navy);color:#EAF0F5;border-radius:12px;padding:16px;font:14px/1.55 Inter,Arial,sans-serif;margin:10px 0}
+.tag{display:inline-block;background:var(--gold);color:#11233B;border-radius:6px;padding:2px 9px;font-size:12px;font-weight:700}
+.ex{border-left:5px solid var(--coral)}.ok{list-style:none;padding:0;margin:0}.ok li{padding:6px 0 6px 28px;position:relative}.ok li:before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:700}
+.note{background:var(--card);border:1px dashed var(--coral);border-radius:14px;padding:16px;color:var(--mut)}
+.btn.wa{background:#25D366;color:#073B1B}
+.info{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:-28px;position:relative;z-index:2}
+.info .card{padding:14px 16px}.info b{display:block;font-size:13px;color:var(--teal);letter-spacing:.06em}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:20;box-shadow:0 6px 18px rgba(0,0,0,.3);border-radius:99px;padding:12px 18px;font-size:14px}
+footer{background:var(--navy);color:#C9D5DF;padding:32px 0;text-align:center;font-size:14px}
+</style></head><body>
+<header class="hero"><div class="w">
+<div class="brand">IMPULSA DIGITAL STUDIO · APRENDÉ · CRECÉ · TRANSFORMÁ</div>
+<h1>Kit de ventas con IA para tu negocio</h1>
+<p class="sub">Del dolor a la venta: te llevás tu sistema de ventas listo, generado en vivo para el nicho que elijas. Taller para comerciantes y emprendedores · Cámara Económica de Tres Arroyos.</p>
+<a class="btn" href="#generador">Armar mi kit</a></div></header>
+
+<div class="w info">
+<div class="card"><b>FECHAS</b>Jueves 12 y miércoles 25 de noviembre (2 encuentros del mismo curso)</div>
+<div class="card"><b>HORA</b>20:30 hs</div>
+<div class="card"><b>LUGAR</b>Cámara Económica de Tres Arroyos</div>
+<div class="card"><b>VALOR</b>Gratuito</div></div>
+
+<section><div class="w"><h2>Primero, el embudo de ventas</h2>
+<p>Todo negocio tiene un recorrido de venta, aunque no lo vea. El kit te ayuda a trabajar cada etapa con IA.</p>
+<div class="funnel">
+<div class="st" style="width:100%;background:#EBA63A"><b>1 · Atraer</b><span>“Me llama la atención” · IA: posteos, reels y anuncios</span></div>
+<div class="st" style="width:90%;background:#F1BB68"><b>2 · Interesar</b><span>“Quiero saber más” · IA: respuestas y catálogo</span></div>
+<div class="st" style="width:80%;background:#F5CC8E"><b>3 · Nutrir</b><span>“¿Puedo confiar?” · IA: contenido, reseñas, preguntas frecuentes</span></div>
+<div class="st" style="width:70%;background:#F8DCB1"><b>4 · Convertir</b><span>“Lo quiero ahora” · IA: presupuesto, WhatsApp y pago</span></div>
+<div class="st" style="width:60%;background:#FBE9CF"><b>5 · Fidelizar</b><span>“Quiero volver” · IA: seguimiento y recomendaciones</span></div>
+</div></div></section>
+
+<section><div class="w"><h2>Cómo funciona el encuentro</h2><div class="steps">
+<div class="card"><div class="num">PASO 1</div><h3>Elegís tu nicho</h3><p>Rubro, producto, zona y cliente. Lo completás en la ficha de abajo.</p></div>
+<div class="card"><div class="num">PASO 2</div><h3>Lo generamos en vivo</h3><p>Pegás el prompt maestro en la IA y construimos juntos tu kit, con ayuda de la disertante.</p></div>
+<div class="card"><div class="num">PASO 3</div><h3>Te lo llevás listo</h3><p>Salís con tu kit guardado, revisado y con la primera acción para probar esta semana.</p></div></div></div></section>
+
+<section id="generador"><div class="w"><h2>Tu generador de kit</h2>
+<p>Completá con datos reales. Los prompts de esta página se arman solos con tu información.</p>
+<div class="chips" id="chips"></div>
+<div class="form">
+<label>Negocio / nicho<input id="n" placeholder="Ej.: panadería artesanal"></label>
+<label>Producto o servicio principal<input id="p" placeholder="Ej.: pan de masa madre y facturas"></label>
+<label>Zona<input id="z" placeholder="Ej.: Tres Arroyos"></label>
+<label>Cliente al que quiero llegar<input id="c" placeholder="Ej.: familias del barrio"></label>
+<label>¿Qué me diferencia?<input id="d" placeholder="Ej.: elaboración propia, sin conservantes"></label></div>
+<div class="card"><span class="tag">PROMPT MAESTRO</span><h3>Generá mi kit de ventas completo</h3>
+<pre id="m"></pre><button class="btn" data-t="m">Copiar prompt maestro</button></div></div></section>
+
+<section><div class="w"><h2>Prompts por etapa del embudo</h2>
+<p>Para profundizar cada parte después del encuentro. Siempre pedile a la IA que te haga preguntas si falta contexto.</p>
+<div class="grid" id="lista"></div></div></section>
+
+<section><div class="w"><h2>Ejemplo: un kit generado en vivo</h2>
+<div class="card ex"><span class="tag">EJEMPLO ILUSTRATIVO</span>
+<h3>Panadería artesanal “La Espiga” (negocio ficticio)</h3>
+<p><b>Propuesta de valor:</b> Ayudo a familias del barrio que quieren pan de verdad a tener en la mesa productos de elaboración propia, horneados cada mañana, sin conservantes.</p>
+<p><b>Anuncio (Atraer):</b> “¿Sentís ese olor? Es el pan recién salido a las 7. Pasá a probarlo y llevate la primera factura de regalo con tu compra [condición a confirmar].”</p>
+<p><b>WhatsApp (Convertir):</b> “¡Hola! Gracias por escribir a La Espiga. Hoy tenemos [producto]. Retiro en [horario]. ¿Te reservo?”</p>
+<p><b>Calendario, primeros 3 días:</b> Día 1 · reel del amasado (Atraer, Instagram) · Día 2 · respuestas a preguntas frecuentes (Interesar, WhatsApp) · Día 3 · promoción de la semana (Convertir, local).</p>
+<p style="color:var(--mut)">Los datos entre corchetes los completa cada negocio con información confirmada.</p></div></div></section>
+
+<section><div class="w"><h2>Te llevás del primer encuentro</h2><div class="card"><ul class="ok">
+<li>Ficha de tu negocio y tu cliente</li><li>Propuesta de valor en una frase</li><li>3 anuncios listos para revisar y publicar</li>
+<li>Calendario de acciones de 10 días vinculado al embudo</li><li>Respuestas de WhatsApp para consultas, precios y seguimiento</li>
+<li>Plan simple de fidelización</li><li>Tu primera acción a probar y qué resultado vas a medir</li></ul></div>
+<p class="note" style="margin-top:16px"><b>Importante:</b> la IA acelera ideas y tareas, pero no conoce tu negocio como vos. Verificá precios, stock y condiciones, no compartas datos personales de clientes y poné tu criterio en cada decisión.</p></div></section>
+
+<section id="resultados"><div class="w"><h2>Subí tus resultados al grupo</h2>
+<p>Probaste tu kit? Compartilo con el resto de los participantes: nos inspiramos entre todos y la disertante te da una mano.</p>
+<div class="card"><span class="tag">GRUPO DE WHATSAPP</span><h3>Comunidad del taller</h3>
+<ul class="ok"><li>Tu propuesta de valor o el anuncio que más te gustó</li><li>Una captura del calendario de 10 días</li><li>Qué acción probaste y qué pasó (solo datos reales)</li><li>Tus dudas: preguntá sin vergüenza</li></ul>
+<p><a class="btn wa" href="https://chat.whatsapp.com/IeD8bmJ9dyz498qKSXWG3g?s=cl&p=a&iam=2" target="_blank" rel="noopener">Unirme al grupo de WhatsApp</a></p>
+<p style="color:var(--mut);font-size:14px">Antes de subir algo, sacá datos personales de clientes (nombres, teléfonos, direcciones).</p></div></div></section>
+
+<a class="btn wa fab" href="https://chat.whatsapp.com/IeD8bmJ9dyz498qKSXWG3g?s=cl&p=a&iam=2" target="_blank" rel="noopener">Subir mis resultados</a>
+
+<footer><div class="w"><b>IMPULSA DIGITAL STUDIO</b><br>Aprendé · Crecé · Transformá · Con la Cámara Económica de Tres Arroyos</div></footer>
+<script>
+var P=[["ATRAER","Tres anuncios","Actuá como especialista en comunicación para pequeños comercios. Creá 3 anuncios para {p}, dirigidos a {c} en {z}. Cada uno con gancho, problema o deseo real, beneficio concreto, prueba verificable y llamado a la acción. Enfoques: práctico, emocional y demostrativo. Tono cercano, español argentino. No inventes precios, stock ni testimonios."],
+["INTERESAR","Propuesta de valor y catálogo","Mi negocio es {n} en {z} y ofrece {p}. Me diferencia: {d}. Redactá 3 propuestas de valor (directa, cálida y centrada en el beneficio) con esta estructura: Ayudo a [cliente] que necesita [necesidad] a conseguir [resultado] mediante [producto], con [diferencial]. Indicá qué datos faltan para verificar cada afirmación."],
+["NUTRIR","Calendario de 10 días","Creá un calendario de contenidos de 10 días para {n}, dirigido a {c}. Para cada día indicá etapa del embudo, tema, formato, texto breve, idea visual, canal y llamado a la acción. Alterná contenido educativo, demostrativo, de confianza y comercial. No repitas mensajes."],
+["CONVERTIR","Respuestas de WhatsApp","Prepará respuestas breves y amables para WhatsApp de {n}: consulta inicial, pedido de precio, falta de stock, duda antes de comprar, confirmación de pedido y seguimiento. Si falta un dato (horarios, precios, entrega, medios de pago), dejá [completar]; nunca lo inventes."],
+["FIDELIZAR","Plan de fidelización","Creá un plan simple de fidelización para {n}: mensaje de agradecimiento, encuesta de 3 preguntas, una acción para clientes que vuelven y una idea de recomendación. Viable para un pequeño negocio, respetuoso y sin descuentos obligatorios."]];
+var F=["n","p","z","c","d"],NI=[["Panadería","pan y facturas"],["Ferretería","herramientas y materiales"],["Indumentaria","ropa y accesorios"],["Peluquería","cortes, color y tratamientos"],["Gastronomía","comidas y viandas"],["Servicios profesionales","asesoramiento y gestiones"]];
+var MM="Actuá como consultor de marketing para pequeños comercios argentinos. Mi negocio: {n}, que vende {p} en {z}. Mi cliente ideal: {c}. Me diferencia: {d}.\n\nConstruí mi kit de ventas con estas 7 partes: 1) 3 segmentos de clientes con dolores, deseos y objeciones; 2) propuesta de valor en una frase; 3) 3 anuncios con gancho, beneficio, prueba y llamado a la acción; 4) calendario de 10 días con acción diaria, etapa del embudo y canal; 5) 6 respuestas breves de WhatsApp; 6) estructura de una página de ventas; 7) plan de fidelización simple.\n\nEspañol argentino, tono cercano. No inventes precios, stock, testimonios ni resultados: si falta un dato, dejá [completar]. Si te falta contexto, hacé hasta 5 preguntas antes de empezar.";
+function v(k){var e=document.getElementById(k).value.trim();return e||"["+({n:"mi negocio",p:"mi producto",z:"mi zona",c:"mi cliente",d:"mi diferencial"})[k]+"]"}
+function fill(t){return t.replace(/\{(\w)\}/g,function(a,k){return v(k)})}
+function render(){document.getElementById("m").textContent=fill(MM);P.forEach(function(x,i){document.getElementById("p"+i).textContent=fill(x[2])})}
+var L=document.getElementById("lista");P.forEach(function(x,i){L.insertAdjacentHTML("beforeend",'<div class="card"><span class="tag">'+x[0]+'</span><h3>'+x[1]+'</h3><pre id="p'+i+'"></pre><button class="btn s" data-t="p'+i+'">Copiar</button></div>')});
+var C=document.getElementById("chips");NI.forEach(function(x){var b=document.createElement("button");b.className="chip";b.textContent=x[0];b.onclick=function(){document.getElementById("n").value=x[0].toLowerCase();document.getElementById("p").value=x[1];render()};C.appendChild(b)});
+F.forEach(function(k){document.getElementById(k).addEventListener("input",render)});
+document.addEventListener("click",function(e){var t=e.target.getAttribute&&e.target.getAttribute("data-t");if(!t)return;var s=document.getElementById(t).textContent;var ok=function(){e.target.textContent="¡Copiado!"};
+try{navigator.clipboard.writeText(s).then(ok,function(){fb(s);ok()})}catch(x){fb(s);ok()}});
+function fb(s){var a=document.createElement("textarea");a.value=s;document.body.appendChild(a);a.select();try{document.execCommand("copy")}catch(x){}a.remove()}
+render();
+</script></body></html>
